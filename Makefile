@@ -1,5 +1,5 @@
 
-primz:  main.o
+primz:  main.o 
 	g++ -o primz main.o
 
 main.o:  main.cpp
@@ -7,3 +7,6 @@ main.o:  main.cpp
 
 clean:
 	rm primz main.o
+
+run:
+	time nice -n-20 ./primz 55000000000 &
